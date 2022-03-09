@@ -51,7 +51,6 @@ function App() {
 
   return (
     <div>
-
       <div className="search-container">
         <input
           ref={inputSearch}
@@ -65,7 +64,7 @@ function App() {
       <div className="body-container">
 
       <div className="left-container">
-        <h4>Select a character to display information</h4>
+        <h4>Select a character to display information.</h4>
         <ul className="characters-list">
           {people?.results?.map((character) => (
             <li key={character.name} onClick={() => showDetails(character)}> {character.name} </li>
